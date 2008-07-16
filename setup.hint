@@ -1,0 +1,6 @@
+category: _obsolete
+sdesc: "Technical and scientific widgets for Qt4 (source)"
+ldesc: "The Qwt library contains widgets and components which are
+primarily useful for technical and scientifical purposes.
+It includes a 2-D plotting widget, different kinds of sliders,
+and much more."

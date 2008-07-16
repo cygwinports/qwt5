@@ -1,0 +1,8 @@
+category: KDE X11
+requires: cygwin libQtCore4 libQtGui4
+external-source: qwt5
+sdesc: "Technical and scientific widgets for Qt4 (runtime)"
+ldesc: "The Qwt library contains widgets and components which are
+primarily useful for technical and scientifical purposes.
+It includes a 2-D plotting widget, different kinds of sliders,
+and much more."
