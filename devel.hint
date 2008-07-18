@@ -1,5 +1,5 @@
 category: KDE X11
-requires: cygwin libqwt5 libQtCore4-dev libQtGui4-dev
+requires: cygwin libqwt5 libQtCore4-devel libQtGui4-devel
 external-source: qwt5
 sdesc: "Technical and scientific widgets for Qt4 (libdevel)"
 ldesc: "The Qwt library contains widgets and components which are

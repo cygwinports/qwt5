@@ -5,7 +5,7 @@ HOMEPAGE="http://qwt.sourceforge.net/"
 SRC_URI="mirror://sourceforge/qwt/qwt-${PV}.tar.bz2"
 SRC_DIR="qwt-${PV}"
 
-PKG_NAMES="${PN} lib${PN} lib${PN}-dev"
+PKG_NAMES="${PN} lib${PN} lib${PN}-devel"
 PKG_HINTS="setup lib devel"
 PKG_CONTENTS[0]=	# empty
 PKG_CONTENTS[1]="usr/bin/*-${PV_MAJ}.dll ${QT4_PLUGINSDIR#/}/ usr/share/doc/"

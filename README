@@ -37,7 +37,7 @@ This will create:
   /usr/src/qwt5-5.1.1-X-src.tar.bz2
   /usr/src/qwt5-5.1.1-X.tar.bz2
   /usr/src/libqwt5-5.1.1-X.tar.bz2
-  /usr/src/libqwt5-dev-5.1.1-X.tar.bz2
+  /usr/src/libqwt5-devel-5.1.1-X.tar.bz2
 
 -------------------------------------------
 
@@ -51,7 +51,7 @@ Files included in the binary packages:
   /usr/share/doc/qwt5-5.1.1/INSTALL
   /usr/share/doc/qwt5-5.1.1/README
 
-(libqwt5-dev)
+(libqwt5-devel)
   /usr/include/qt4/qwt.h
   /usr/include/qt4/qwt_abstract_scale.h
   /usr/include/qt4/qwt_abstract_scale_draw.h
