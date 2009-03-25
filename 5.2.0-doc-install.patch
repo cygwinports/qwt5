@@ -1,0 +1,8 @@
+--- origsrc/qwt-5.2.0/src/src.pro	2009-03-22 10:41:05.000000000 -0500
++++ src/qwt-5.2.0/src/src.pro	2009-03-24 23:52:15.957750000 -0500
+@@ -221,4 +221,4 @@ unix {
+     doc.files      += $${QWT_ROOT}/doc/man
+ }
+ 
+-INSTALLS       = target headers doc
++INSTALLS       = target headers

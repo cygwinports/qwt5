@@ -6,17 +6,18 @@ It includes a 2-D plotting widget, different kinds of sliders,
 and much more.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libQtCore4-4.4.0-1
-  libQtGui4-4.4.0-1
+  cygwin-1.7.0-44
+  libgcc1-4.3.2-2
+  libQtCore4-4.4.3-10
+  libQtGui4-4.4.3-10
+  libstdc++6-4.3.2-2
 
 Build requirements:
-  cygwin-1.5.25-15
-  binutils-20080523-2
-  cygport-0.3.13-1
-  gcc-core-3.4.4-3
-  gcc-g++-3.4.4-3
-  make-3.81-1
+  binutils-20080624-2
+  cygport-0.9.6-1
+  gcc4-core-4.3.2-2
+  gcc4-g++-4.3.2-2
+  make-3.81-2
 
 Canonical website:
   http://qwt.sourceforge.net/
@@ -27,17 +28,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack qwt5-5.1.1-X-src.tar.bz2
+  unpack qwt5-5.2.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./qwt5-5.1.1-X.cygport all
+  cygport ./qwt5-5.2.0-X.cygport all
 
 This will create:
-  /usr/src/qwt5-5.1.1-X-src.tar.bz2
-  /usr/src/qwt5-5.1.1-X.tar.bz2
-  /usr/src/libqwt5-5.1.1-X.tar.bz2
-  /usr/src/libqwt5-devel-5.1.1-X.tar.bz2
+  /usr/src/libqwt5-5.2.0-X.tar.bz2
+  /usr/src/libqwt5-devel-5.2.0-X.tar.bz2
+  /usr/src/qwt5-5.2.0-X-src.tar.bz2
 
 -------------------------------------------
 
@@ -45,11 +45,8 @@ Files included in the binary packages:
 
 (libqwt5)
   /usr/bin/cygqwt-5.dll
-  /usr/lib/qt4/plugins/designer/cygqwt_designer_plugin.dll
-  /usr/share/doc/qwt5-5.1.1/COPYING
-  /usr/share/doc/qwt5-5.1.1/Changes
-  /usr/share/doc/qwt5-5.1.1/INSTALL
-  /usr/share/doc/qwt5-5.1.1/README
+  /usr/share/doc/qwt5/COPYING
+  /usr/share/doc/qwt5/README
 
 (libqwt5-devel)
   /usr/include/qt4/qwt.h
@@ -100,12 +97,12 @@ Files included in the binary packages:
   /usr/include/qt4/qwt_plot_picker.h
   /usr/include/qt4/qwt_plot_printfilter.h
   /usr/include/qt4/qwt_plot_rasteritem.h
+  /usr/include/qt4/qwt_plot_rescaler.h
   /usr/include/qt4/qwt_plot_scaleitem.h
   /usr/include/qt4/qwt_plot_spectrogram.h
   /usr/include/qt4/qwt_plot_zoomer.h
   /usr/include/qt4/qwt_polygon.h
   /usr/include/qt4/qwt_raster_data.h
-  /usr/include/qt4/qwt_rect.h
   /usr/include/qt4/qwt_round_scale_draw.h
   /usr/include/qt4/qwt_scale_div.h
   /usr/include/qt4/qwt_scale_draw.h
@@ -122,13 +119,14 @@ Files included in the binary packages:
   /usr/include/qt4/qwt_valuelist.h
   /usr/include/qt4/qwt_wheel.h
   /usr/lib/qt4/lib/libqwt.dll.a
+  /usr/lib/qt4/plugins/designer/cygqwt_designer_plugin.dll
 
 ------------------
 
 Port Notes:
 
------ version 5.1.1-1 -----
-Initial release of 5.x branch for Cygwin.
+----- version 5.2.0-1 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
