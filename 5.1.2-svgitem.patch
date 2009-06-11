@@ -1,0 +1,11 @@
+--- origsrc/qwt-5.1.2/qwtconfig.pri	2009-06-11 11:19:29.697247700 -0500
++++ src/qwt-5.1.2/qwtconfig.pri	2009-06-11 11:26:08.438340300 -0500
+@@ -97,7 +97,7 @@ CONFIG     += QwtWidgets
+ # QwtSVGItem.
+ ######################################################################
+ 
+-#CONFIG     += QwtSVGItem
++CONFIG     += QwtSVGItem
+ 
+ ######################################################################
+ # If you have a commercial license you can use the MathML renderer

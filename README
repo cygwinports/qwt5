@@ -6,10 +6,11 @@ It includes a 2-D plotting widget, different kinds of sliders,
 and much more.
 
 Runtime requirements:
-  cygwin-1.7.0-44
+  cygwin-1.7.0-48
   libgcc1-4.3.2-2
-  libQtCore4-4.4.3-10
-  libQtGui4-4.4.3-10
+  libQtCore4-4.5.1-1
+  libQtGui4-4.5.1-1
+  libQtSvg4-4.5.1-1
   libstdc++6-4.3.2-2
 
 Build requirements:
@@ -28,16 +29,16 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack qwt5-5.2.0-X-src.tar.bz2
+  unpack qwt5-5.1.2-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./qwt5-5.2.0-X.cygport all
+  cygport ./qwt5-5.1.2-X.cygport all
 
 This will create:
-  /usr/src/libqwt5-5.2.0-X.tar.bz2
-  /usr/src/libqwt5-devel-5.2.0-X.tar.bz2
-  /usr/src/qwt5-5.2.0-X-src.tar.bz2
+  /usr/src/libqwt5-5.1.2-X.tar.bz2
+  /usr/src/libqwt5-devel-5.1.2-X.tar.bz2
+  /usr/src/qwt5-5.1.2-X-src.tar.bz2
 
 -------------------------------------------
 
@@ -97,12 +98,13 @@ Files included in the binary packages:
   /usr/include/qt4/qwt_plot_picker.h
   /usr/include/qt4/qwt_plot_printfilter.h
   /usr/include/qt4/qwt_plot_rasteritem.h
-  /usr/include/qt4/qwt_plot_rescaler.h
   /usr/include/qt4/qwt_plot_scaleitem.h
   /usr/include/qt4/qwt_plot_spectrogram.h
+  /usr/include/qt4/qwt_plot_svgitem.h
   /usr/include/qt4/qwt_plot_zoomer.h
   /usr/include/qt4/qwt_polygon.h
   /usr/include/qt4/qwt_raster_data.h
+  /usr/include/qt4/qwt_rect.h
   /usr/include/qt4/qwt_round_scale_draw.h
   /usr/include/qt4/qwt_scale_div.h
   /usr/include/qt4/qwt_scale_draw.h
@@ -124,6 +126,10 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 5.1.2-1 -----
+Downgraded version, as 5.2.0 is API incompatible with 5.1.x and nothing
+using Qwt is ready for 5.2 yet.
 
 ----- version 5.2.0-1 -----
 Initial release for Cygwin 1.7.
