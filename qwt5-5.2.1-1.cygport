@@ -3,14 +3,13 @@ inherit qt4-qmake
 DESCRIPTION="Qt Widgets for Technical Applications"
 HOMEPAGE="http://qwt.sourceforge.net/"
 SRC_URI="mirror://sourceforge/qwt/qwt-${PV}.tar.bz2"
+SRC_DIR="qwt-${PV}"
+
 PATCH_URI="5.1.1-qwtconfig.patch
            5.1.2-svgitem.patch
            5.2.0-doc-install.patch"
 
-SRC_DIR="qwt-${PV}"
-
-PKG_NAMES="${PN} lib${PN} lib${PN}-devel"
-PKG_HINTS="setup lib devel"
+PKG_NAMES="lib${PN} lib${PN}-devel"
 libqwt5_CONTENTS="usr/bin/*-${PV_MAJ}.dll ${QT4_PLUGINSDIR#/}/ usr/share/doc/"
 libqwt5_devel_CONTENTS="${QT4_INCLUDEDIR#/} ${QT4_LIBDIR#/}"
 
