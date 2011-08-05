@@ -1,0 +1,29 @@
+inherit qt4-qmake
+
+DESCRIPTION="Qt Widgets for Technical Applications"
+HOMEPAGE="http://qwt.sourceforge.net/"
+SRC_URI="mirror://sourceforge/qwt/qwt-${PV}.tar.bz2"
+SRC_DIR="qwt-${PV}"
+
+PATCH_URI="5.2.2-qwtconfig.patch
+           5.2.2-system-qtmmlwidget.patch"
+
+PKG_NAMES="lib${PN} lib${PN}-devel lib${PN}-doc"
+libqwt5_CONTENTS="--exclude=html usr/bin/*-5.dll usr/share/doc/"
+libqwt5_devel_CONTENTS="${QT4_INCLUDEDIR#/} usr/lib/"
+libqwt5_doc_CONTENTS="usr/share/doc/${PN}/html/ usr/share/man/"
+
+MAKEOPTS+=" -j1"
+
+src_install() {
+	cd ${B}
+	qt4_qmake_install
+
+	dodir /usr/bin ${QT4_INCLUDEDIR} /usr/lib /usr/share/doc/${PN}
+	mv ${D}/usr/local/qwt-${PV}/lib/*.dll ${D}/usr/bin/
+	mv ${D}/usr/local/qwt-${PV}/lib/*.a ${D}/usr/lib/
+	mv ${D}/usr/local/qwt-${PV}/include/* ${D}${QT4_INCLUDEDIR}/
+	mv ${D}/usr/local/qwt-${PV}/doc/html ${D}/usr/share/doc/${PN}/
+	mv ${D}/usr/local/qwt-${PV}/doc/man ${D}/usr/share/
+	rm -f ${D}/usr/share/man/man3/[^Qq]*
+}

@@ -1,7 +1,7 @@
 category: KDE
-requires: libqwt5 libQtCore4-devel libQtGui4-devel
+requires:
 external-source: qwt5
-sdesc: "Technical and scientific widgets for Qt4 (libdevel)"
+sdesc: "Technical and scientific widgets for Qt4 (API documentation)"
 ldesc: "The Qwt library contains widgets and components which are
 primarily useful for technical and scientifical purposes.
 It includes a 2-D plotting widget, different kinds of sliders,
