@@ -1,0 +1,29 @@
+inherit qt4-qmake
+
+NAME="qwt5"
+VERSION=5.2.3
+RELEASE=1
+CATEGORY="Libs"
+SUMMARY="Qt4 Widgets for Technical Applications"
+DESCRIPTION="The Qwt library contains widgets and components which are
+primarily useful for technical and scientifical purposes. It includes a
+2-D plotting widget, different kinds of sliders, and much more."
+HOMEPAGE="http://qwt.sourceforge.net/"
+SRC_URI="mirror://sourceforge/qwt/qwt-${VERSION}.tar.bz2"
+SRC_DIR="qwt-${VERSION}"
+
+PATCH_URI="5.2.2-qwtconfig.patch"
+
+PKG_NAMES="lib${NAME} lib${NAME}-devel lib${NAME}-doc"
+libqwt5_CONTENTS="--exclude=html usr/bin/*-5.dll usr/share/doc/"
+libqwt5_devel_CONTENTS="${QT4_INCLUDEDIR#/} usr/lib/"
+libqwt5_doc_CONTENTS="usr/share/doc/${NAME}/html/"
+
+src_install() {
+	cd ${B}
+	qt4_qmake_install
+	# may be qwt-qt4 or qwt5-qt4, but we should need qwt5 only for qt4
+	mv ${D}/usr/lib/libqwt{,5}.dll.a
+
+	rm -fr ${D}/usr/share/doc/${NAME}/man
+}
