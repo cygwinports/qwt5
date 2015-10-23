@@ -6,7 +6,7 @@ RELEASE=1
 CATEGORY="Libs"
 SUMMARY="Qt4 Widgets for Technical Applications"
 DESCRIPTION="The Qwt library contains widgets and components which are
-primarily useful for technical and scientifical purposes. It includes a
+primarily useful for technical and scientific purposes. It includes a
 2-D plotting widget, different kinds of sliders, and much more."
 HOMEPAGE="http://qwt.sourceforge.net/"
 SRC_URI="mirror://sourceforge/qwt/qwt-${VERSION}.tar.bz2"
